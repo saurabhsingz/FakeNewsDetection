@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit = no">
+    <title>Fake news detection</title>
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h1 id="logo">
+                        <img src="../static/fakeNews.jpg" alt="" width="90px">
+                        Fake News Detector!!
+                    </h1>
+                </div>
+                <div class="col-4">
+                    <ul id="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about" target="blank">About</a></li>
+                        <li><a href="/contact" target="blank">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="banner-title">
+                        <h3 class="title">Beware of false knowledge;
+                            it is more dangerous than ignorance.
+                        </h3>
+                        <h5>
+                            —George Bernard Shaw
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="restPage">
+        <div class="container" id="inputArea">
+            <div class="row">
+                <h3>
+                    <br>
+                    Enter the headlines of the news below to Predict, whether it is real or fake:
+                    <br> <br>
+                    <p id="result"> <b> {{prediction_text}} </b> </p> <br>
+                </h3>
+                <form action="/prediction" method="POST">
+                    <div>
+                        <input type="text" class="form-control py-4" id="news" name = "news" placeholder="Enter headlines">
+                    </div>
+                    <br><br>
+                    <a href="/prediction"> </a><button type="submit" class="btn btn-primary"
+                        id="submission">Predict</button></a>
+                </form>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6"> &copy 2021 All rights reserved</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
