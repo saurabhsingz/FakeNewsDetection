@@ -70,7 +70,7 @@ We assume that higher number of repetitions of a word would mean greater importa
  In the end, the accuracy score and confusion matrix tell us how well our model works.
  Passive Aggressive classifier -. This algorithm react positive for the true data and react aggressive for fake data , we have to predict it on testing part.
 
- In the end, the accuracy score and confusion matrix tell us how well our model works.
+ In the end, the accuracy score and confusion matrix tell us how well our model works .
 
 
 
